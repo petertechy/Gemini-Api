@@ -1,0 +1,12 @@
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 28% auto;
+    align-items: center;
+}
+
+
+.container> div:first-child{
+    background-color: purple;
+    height: 100%;
+}

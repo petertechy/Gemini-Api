@@ -1,0 +1,11 @@
+.container{
+    width: 300px;
+    padding: 1.5rem;
+    /* border: 1px solid red; */
+}
+
+.link{
+    color: red;
+    text-decoration: none;
+    font-weight: 500;
+}
