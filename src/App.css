@@ -17,3 +17,12 @@
   display: flex;
   gap: 1rem ;
 }
+
+
+.page{
+  min-height: 100vh;
+  background-color: rgba(222, 184, 135, 0.7);
+  align-items: center;
+  display: grid; 
+  text-align: center;
+}

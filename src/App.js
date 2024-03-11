@@ -1,59 +1,26 @@
-import logo from "./logo.svg";
-import ExampleComponent from "./components/ExampleComponent";
+import React from "react";
 import "./App.css";
-import OurServices from "./components/OurServices";
+import { Routes, Route, Navigate } from "react-router-dom";
+import AboutUsPage from "./pages/AboutUsPage";
+import LandingPage from "./pages/LandingPage";
+import SigninPage from "./pages/SigninPage";
 import Wrapper from "./components/Wrapper";
-
-function App() {
-  let studentName = "Olamilekan";
-  const cars = ["mercedes", "lambo", "ferrari", "tesla"];
-
-  const h1Style = { color: "purple", backgroundColor: "aqua", padding: "10px" };
+import NotFound from "./pages/NotFound";
+const App = () => {
   return (
-    <div className=''>
+    <>
+      <h1>This is in App JS</h1>
       <Wrapper>
-        <h1>Hello</h1>
+        <Routes>
+          <Route path='/about-us' element={<AboutUsPage />} />
+          <Route path='/' element={<LandingPage />} />
+          <Route path='/landing' element={<Navigate to={"/"}/>} />
+          <Route path='/sign-in' element={<SigninPage />} />
+          <Route path='/*' element={<NotFound />} />
+        </Routes>
       </Wrapper>
-      <header className=' home'>
-        <h1 style={h1Style}> This is my first react app</h1>
-        <h1>Hello</h1>
-        <div className='flex'>
-          <ExampleComponent />
-          <ExampleComponent />
-          <ExampleComponent />
-          <ExampleComponent />
-          <ExampleComponent />
-        </div>
-        A town hall different from bala blu, blue blu bulaba. broom broom broom
-        brooooooooom. Bala blu blue blu bulaba.
-        <OurServices
-          title='Accept Tokens'
-          body='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat perferendis recusandae dolorum corporis earum, quos tenetur error amet sit ducimus enim in voluptatem asperiores, repellendus possimus voluptatum iste facilis totam.'
-        />
-        <OurServices
-          title='Make Payments'
-          body='A town hall different from bala blu, blue blu bulaba. broom broom broom brooooooooom. Bala blu blue blu bulaba.'
-        />
-        <h1>1 + 1</h1>
-        <h1 className='example'>{studentName}</h1>
-        <ul>
-          {cars.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-        <ul>
-          <li>Global Styling</li>
-          <li>Inline Styling</li>
-          <li>Module Styling</li>
-        </ul>
-      </header>
-
-      <Wrapper>
-        <h1 style={{ color: "red" }}>Hello World</h1>
-        <p>Hi</p>
-      </Wrapper>
-    </div>
+    </>
   );
-}
+};
 
 export default App;

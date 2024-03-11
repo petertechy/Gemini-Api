@@ -3,10 +3,17 @@
     display: grid;
     grid-template-columns: 28% auto;
     align-items: center;
+    font-size: 2rem;
+    /* color: white; */
 }
 
 
 .container> div:first-child{
     background-color: purple;
     height: 100%;
+}
+
+.options{
+    color: white;
+    text-decoration: none;
 }
