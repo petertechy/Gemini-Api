@@ -8,6 +8,7 @@ const Wrapper = (props) => {
     { name: "Home", link: "/landing" },
     { name: "About Us", link: "/about-us" },
     { name: "Sign In Page", link: "/sign-in" },
+    { name: "User Dashboard", link: "/user/dashboard" },
   ];
   return (
     <div className={classes.container}>
