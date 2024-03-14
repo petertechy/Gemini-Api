@@ -28,7 +28,7 @@ const App = () => {
           <Route path='/about-us' element={<AboutUsPage />} />
           <Route path='/' element={<LandingPage />} />
           <Route path='/landing' element={<Navigate to={"/"} />} />
-          <Route path='/:data' element={<Welcome />} />
+          {/* <Route path='/:data' element={<Welcome />} /> */}
           <Route path='/sign-in' element={<SigninPage />} />
           <Route path='/user/*' element={<UserRoute />} />
           <Route path='/*' element={<NotFound />} />

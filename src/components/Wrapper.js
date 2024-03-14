@@ -16,11 +16,8 @@ const Wrapper = (props) => {
         <ul>
           
           {options.map((option) => (
-            <li key={option}>
-              
+            <li key={option.name}>
               <Link className={classes.options} to={option.link}> {option.name}</Link>
-         
-              
               </li>
           ))}
         </ul>

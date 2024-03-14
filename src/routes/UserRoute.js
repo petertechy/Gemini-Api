@@ -10,6 +10,7 @@ const UserRoute = () => {
         <Route index element ={<UserLanding/>}/>
         <Route path="/dashboard" element ={<UserDashboard/>}/>
         <Route path="/forgot-password" element ={<UserForgotPassword/>}/>
+        <Route path="/*" element ={<UserForgotPassword/>}/>
     </Routes>
   )
 }
