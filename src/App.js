@@ -153,12 +153,14 @@ const App = () => {
                 {display.map(item=>(
                   <p>{item}</p>
                 ))}
+                <div className="mx-auto col-2 my-3">
                 <button
                   className=' btn btn-danger'
                   onClick={() => getGPTSuggestion(`how to ${activity}`)}
                 >
                   Read More
                 </button>
+                </div>
               </>
             ) : null}
           </div>
