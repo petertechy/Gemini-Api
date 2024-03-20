@@ -45,6 +45,7 @@ const App = () => {
   };
 
   const getGPTSuggestion = async (prompt) => {
+
     const genAI = new GoogleGenerativeAI(
       process.env.REACT_APP_GOOGLE_GEMINI_AI
     );
