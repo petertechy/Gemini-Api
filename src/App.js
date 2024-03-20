@@ -64,6 +64,7 @@ const App = () => {
   };
 
   const fetchData = async () => {
+    setDisplay([])
     let url = "http://www.boredapi.com/api/activity?";
     if (param.type) {
       url += `type=${param.type}&`;
